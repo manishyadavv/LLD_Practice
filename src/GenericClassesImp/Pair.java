@@ -8,6 +8,9 @@ public class Pair<T,K> {
         this.key=key;
         this.value=value;
     }
+    public T getKey(){
+      return key;
+    }
 }
 /*
 public class Main{
