@@ -2,6 +2,7 @@ package SuperSubClass;
 
 
 import AbstractClassPractice.Audi;
+import NestedClasses.NonStaticClass;
 import NestedClasses.OuterClass;
 
 //If a class doesnt extend and other parent class(super class) in JAVA it before the scenes always implecitly subclass of Object class
@@ -16,12 +17,16 @@ public class SuperClass {
 
         */
 
-
-//        Nested usage
+        /*
+        Nested usage
         OuterClass.NestedClass outerClass = new OuterClass.NestedClass();
         outerClass.printVariables();
 
+         */
+        //using outer class to create obj of non static inner nested class
+        NonStaticClass outerClass= new NonStaticClass();
 
+        NonStaticClass.innerNestedClass o = outerClass.new innerNestedClass();
 
     }
 }
