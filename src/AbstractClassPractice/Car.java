@@ -8,6 +8,7 @@ public abstract class Car {
     Car(int carNumber){
         this.carNumber= carNumber;
     }
+    public Car(){}
     public abstract void applyBreaks();
     public abstract void accelerate();
 
