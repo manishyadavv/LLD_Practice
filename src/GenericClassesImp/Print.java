@@ -36,15 +36,15 @@ public class Print<T> {
     }
 }
 
-public class Main() {
-    public static void main(String args[]) {
-        Print<Integer> printObj1 = new Print<Integer>();
-        printObj1.setPrintValue(1);
-        Integer printValue = printObj1.getPrintValue();
-
-        if (printValue == 1) {
-            //do something
-            System.out.println("Generic class worked");
-        }
-    }
-}
+//public class Main() {
+//    public static void main(String args[]) {
+//        Print<Integer> printObj1 = new Print<Integer>();
+//        printObj1.setPrintValue(1);
+//        Integer printValue = printObj1.getPrintValue();
+//
+//        if (printValue == 1) {
+//            //do something
+//            System.out.println("Generic class worked");
+//        }
+//    }
+//}
