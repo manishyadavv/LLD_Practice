@@ -4,6 +4,12 @@ package GenericClassesImp;
 public class Pair<T,K> {
     T key;
     K value;
+
+    public Pair(T i, K j) {
+        this.key=i;
+        this.value=j;
+    }
+
     public void put(T key, K value){
         this.key=key;
         this.value=value;
