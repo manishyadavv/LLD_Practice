@@ -1,6 +1,6 @@
 package MultithreadingInJava.ThreadCreations;
 
-public class Main {
+public class MultithreadingLeaningMain {
     public static void main(String args[]){
 
         // Thread and process
@@ -11,5 +11,9 @@ public class Main {
             In process it can have many threads, the one thread created at start of process is called Main thread
         * */
         System.out.println("Thread Main is :"+Thread.currentThread().getName());
+
+        RunnableFunction runnableFunction = new RunnableFunction();
+        Thread thread = new Thread(runnableFunction);
+        thread.start();
     }
 }
