@@ -11,7 +11,15 @@ public class MultithreadingLeaningMain {
             In process it can have many threads, the one thread created at start of process is called Main thread
         * */
         System.out.println("Thread Main is :"+Thread.currentThread().getName());
-
+        /*
+        Step 1 : create runnable class and implement run() basically add what thread has to do
+        Step 2 : create object of this runnable object and pass it into thread
+        Step 3 : create thread and pass in this runnable object and start the tthread
+        OR other ways is using lamda fucntions
+        Thread thread = new Thread(()->{
+        //same code which we were going to write in run() implementations
+        });
+         */
         RunnableFunction runnableFunction = new RunnableFunction();
         Thread thread = new Thread(runnableFunction);
         thread.start();
