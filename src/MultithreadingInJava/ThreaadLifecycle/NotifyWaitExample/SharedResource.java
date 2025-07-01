@@ -1,4 +1,4 @@
-package MultithreadingInJava.ThreaadLifecycle.LifeCycleStates.NotifyWaitExample;
+package MultithreadingInJava.ThreaadLifecycle.NotifyWaitExample;
 
 import java.util.LinkedList;
 import java.util.Queue;

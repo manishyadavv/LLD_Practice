@@ -1,4 +1,4 @@
-package MultithreadingInJava.ThreaadLifecycle.LifeCycleStates.MonitorLocks;
+package MultithreadingInJava.ThreaadLifecycle.MonitorLocks;
 
 public class MonitorLocks {
     public synchronized void task1(){

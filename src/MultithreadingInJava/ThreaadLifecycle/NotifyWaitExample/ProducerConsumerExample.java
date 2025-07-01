@@ -1,4 +1,4 @@
-package MultithreadingInJava.ThreaadLifecycle.LifeCycleStates.NotifyWaitExample;
+package MultithreadingInJava.ThreaadLifecycle.NotifyWaitExample;
 
 public class ProducerConsumerExample {
     public static void main(String args[]){
