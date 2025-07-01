@@ -1,5 +1,8 @@
 package MultithreadingInJava.ThreadCreations;
 
+import MultithreadingInJava.ThreadCreations.ClassBased.MyClass;
+import MultithreadingInJava.ThreadCreations.RunnableBased.RunnableBased;
+
 public class MultithreadingLeaningMain {
     public static void main(String args[]){
 
@@ -20,7 +23,7 @@ public class MultithreadingLeaningMain {
         //same code which we were going to write in run() implementations
         });
          */
-        RunnableFunction runnableFunction = new RunnableFunction();
+        RunnableBased runnableFunction = new RunnableBased();
         Thread thread = new Thread(runnableFunction);
         thread.start();
         //OR
@@ -35,5 +38,19 @@ public class MultithreadingLeaningMain {
         Task Done by Thread: Thread-0
         Task Done by Thread: Thread-1
          */
+
+        /*
+        Now we are going to create instance of MyClass which is extending the Thread
+            -similar to runnable it has provided the implementation of run()
+         */
+        MyClass myThread = new MyClass();
+        /*
+        So here output is ,
+        --
+        --
+        Thread is run by extending class
+         */
+
+        myThread.start();
     }
 }
