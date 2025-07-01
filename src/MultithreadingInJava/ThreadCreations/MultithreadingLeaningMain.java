@@ -23,5 +23,17 @@ public class MultithreadingLeaningMain {
         RunnableFunction runnableFunction = new RunnableFunction();
         Thread thread = new Thread(runnableFunction);
         thread.start();
+        //OR
+        Thread thread2 = new Thread(()->{
+            System.out.println("Task Done by Thread: "+Thread.currentThread().getName());
+        });
+        thread2.start();
+        System.out.println("Main Thread Done by Thread: "+Thread.currentThread().getName());
+        /*
+        So here output is , as we created two thread apart from main thread. main thread does not wait for other threads
+        Thread Main is :main
+        Task Done by Thread: Thread-0
+        Task Done by Thread: Thread-1
+         */
     }
 }
