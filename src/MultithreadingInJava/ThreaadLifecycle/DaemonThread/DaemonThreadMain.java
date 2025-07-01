@@ -9,6 +9,7 @@ public class DaemonThreadMain {
             main stops daemon stops
             examples of daemon are auto-save functionality
             also another one is logging system running till then
+            aslo helpfull in garbage collector whenever jvm is running it keeps on running
          */
 
 
