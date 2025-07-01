@@ -10,6 +10,6 @@ public class Main {
             or Thread is the set of instructions that are executed by the CPU independently
             In process it can have many threads, the one thread created at start of process is called Main thread
         * */
-        System.out.println("Thread Main is:"+Thread.currentThread().getName());
+        System.out.println("Thread Main is :"+Thread.currentThread().getName());
     }
 }
